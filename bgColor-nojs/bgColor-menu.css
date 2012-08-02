@@ -1,0 +1,90 @@
+/*
+ * Background Color Mneu CSS
+ * 
+ * https://github.com/wmpe/Menu/bgColor-nojs
+ *
+ * Copyright (c) 2012, Mahla Delpak (mahlad365@gmail.com) under a MIT License (http://opensource.org/licenses/MIT).
+ *
+ */
+/*---------------Global Section----------------*/ 
+*{
+	padding:0;
+	margin:0;	
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-transform:capitalize;
+	font-weight:bold;
+	
+}
+div.container{
+}
+/*---------------Menu Section----------------*/ 
+
+/*--------------Main Menu---------------*/
+div.container nav.topmenu{
+	width:100%;
+	background-color:#999;
+	height:60px;
+}
+nav.topmenu > ul{
+	list-style-type:none;
+	margin:0 auto;
+	width:700px;
+}
+nav.topmenu > ul > li{
+	float:left;
+	padding:10px;
+	position:relative;
+}
+nav.topmenu > ul > li > a{
+	text-decoration:none;
+	padding:10px 20px;
+	display:block;
+	color:#dfdfdf;
+}
+nav.topmenu > ul > li:hover > a{
+	background-color:#dfdfdf;
+	border-radius:5px;
+	color:#4d4651;
+}
+/*--------------First Submenu---------------*/
+nav.topmenu li ul{
+	list-style-type:none;
+	position:absolute;
+	top:53px;
+	background-color:#f2f2f2;
+	border-radius:5px;
+	border:1px solid #c5c5c5;
+	display:none;	
+}
+nav.topmenu li:hover > ul{
+	display:block;	
+}
+nav.topmenu li li{
+	padding:3px 10px;
+	position:relative;	
+}
+nav.topmenu li li a{
+	text-decoration:none;
+	padding:7px 12px;
+	display:inherit;
+	border-radius:5px;
+	white-space:nowrap;
+	color:#898a8b;	
+}
+nav.topmenu li li:hover > a{
+	background-color:#acacac;
+	color:#eaeaea;	
+}
+/*--------------Second Submenu---------------*/
+nav.topmenu li li ul{
+	left:100%;
+	display:none;
+	position:absolute;
+	top:0;
+}
+nav.topmenu li li:hover ul{
+	display:block;
+}
